@@ -21,9 +21,8 @@ const Footer = () => {
                     </section>
 
                     <section className={cx('footer-section', 'follow')} aria-label="Follow on social media">
-                        <h2>FOLLOW ON</h2>
+                        <h2>Theo dõi tại</h2>
                         <div className={cx('social-icons')} role="list">
-                            <i className={cx('fab', 'fa-figma')} aria-label="Figma" role="listitem" tabIndex={0}></i>
                             <i
                                 className={cx('fab', 'fa-linkedin-in')}
                                 aria-label="LinkedIn"
@@ -49,18 +48,8 @@ const Footer = () => {
 
                 <div className={cx('footer-middle')} aria-label="Contact email">
                     <span>
-                        <strong>MAIL:</strong> axxxx@gmail.com
+                        <strong>© 2025 by PHD Studio</strong>
                     </span>
-                </div>
-
-                <div className={cx('footer-bottom')} aria-label="Footer navigation and copyright">
-                    <nav>
-                        <p tabIndex={0}>About</p>
-                        <p tabIndex={0}>Disclaimer</p>
-                        <p tabIndex={0}>Privacy Policy</p>
-                        <p tabIndex={0}>Terms and Conditions</p>
-                    </nav>
-                    <small>© 2023 by Asif.</small>
                 </div>
             </footer>
         </>

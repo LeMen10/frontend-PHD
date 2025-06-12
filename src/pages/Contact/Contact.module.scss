@@ -1,230 +1,157 @@
-.main-content {
-    width: 100%;
-    flex-direction: column;
-    padding: 20px;
-    overflow-y: auto;
-    background-color: #fff;
-    height: 100%;
-    color: #121212;
+.contact-section {
+    background-color: #f7fafc;
+    padding: 40px 20px;
 }
 
-.sidebar .logout {
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.text-center {
     text-align: center;
-    margin-top: 20px;
-}
-.sidebar .logout i {
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+    margin-bottom: 64px;
 }
 
-.main-content .search-bar {
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a202c;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #4a5568;
+    max-width: 672px;
+    margin: 0 auto;
+}
+
+.flex-container {
     display: flex;
-    align-items: center;
-    background-color: #333333;
-    padding: 10px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.main-content .search-bar input {
-    flex: 1;
-    background: none;
-    border: none;
-    color: #ffffff;
-    margin-left: 10px;
+.form-container,
+.info-container {
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a202c;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
     outline: none;
 }
 
-.main-content .tabs {
-    display: flex;
-    margin-bottom: 20px;
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #9f7aea;
+    box-shadow: 0 0 0 2px rgba(159, 122, 234, 0.5);
 }
 
-.main-content .tabs .tab {
-    padding: 6px 14px;
-    background-color: #333333;
-    border-radius: 20px;
-    margin-right: 10px;
-    cursor: pointer;
+.form-textarea {
+    height: 120px;
+    resize: vertical;
 }
 
-.main-content .tabs .tab.active {
-    background-color: #1db954;
-}
-
-.main-content .section {
-    margin-bottom: 20px;
-}
-
-.main-content .section h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.main-content .section .items {
-    display: flex;
-    overflow-x: auto;
-}
-
-.items::-webkit-scrollbar {
-    height: 8px;
-}
-
-.main-content .section .item {
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.main-content .section .item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.main-content .section .item .title {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.main-content .section .item .subtitle {
-    font-size: 14px;
-    color: #b3b3b3;
-}
-
-.btn-add {
-    background-color: transparent;
-    border: 1.5px solid #fff;
-    border-radius: 20px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 11px;
-    padding: 4px 12px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.btn-add:hover {
-    background-color: #fff;
-    color: #121212;
-}
-
-.song-title {
-    font-weight: 500;
-    font-size: 14px;
+.submit-button {
+    width: 100%;
+    background: linear-gradient(to right, #9f7aea, #ed64a6);
     color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
     cursor: pointer;
-
-    &.active {
-        font-weight: 700;
-        color: #4caf50;
-    }
+    transition: opacity 0.2s;
 }
 
-// .song-artist {
-//     font-weight: 400;
-//     font-size: 12px;
-//     color: #9aa3a8;
-//     cursor: pointer;
-// }
+.submit-button:hover {
+    opacity: 0.9;
+}
 
-// .song-info {
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
-// }
+.contact-info {
+    margin-bottom: 32px;
+}
 
-// .song-info img {
-//     width: 40px;
-//     height: 40px;
-//     object-fit: cover;
-//     border-radius: 2px;
-//     cursor: pointer;
-// }
-
-.song-text {
+.info-item {
     display: flex;
-    flex-direction: column;
-    line-height: 1.6;
+    align-items: flex-start;
+    margin-bottom: 13px;
 }
 
-.menu {
-    width: 240px;
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 4px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 200;
-    max-height: 292px;
-    margin: auto;
-    overflow-y: auto;
-}
-
-.menu-down {
-    top: 100%;
+.info-icon {
+    color: #9f7aea;
+    margin-right: 16px;
     margin-top: 4px;
-    bottom: auto;
 }
 
-.menu-up {
-    bottom: 100%;
-    margin-bottom: 4px;
-    top: auto;
+.info-title {
+    font-weight: 500;
+    color: #1a202c;
 }
 
-.menu-item {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 10px 16px;
-    font-size: 14px;
-    color: #eee;
-    cursor: pointer;
-    user-select: none;
-    border-bottom: 1px solid #333;
+.info-text {
+    color: #4a5568;
 }
 
-.menu-item:last-child {
-    border-bottom: none;
+.hours-card {
+    background: linear-gradient(to right, #9f7aea, #ed64a6);
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
-.menu-item:hover {
-    background-color: #3a3a3a;
+.hours-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
-.menu-item i {
-    font-size: 16px;
-    min-width: 20px;
-    text-align: center;
-    color: #ccc;
+.hours-text {
+    margin-bottom: 8px;
 }
 
-.menu-item.active i {
-    color: #eee;
-}
+@media (min-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+    }
 
-.menu-item.disabled {
-    color: #666;
-    cursor: default;
-}
+    .form-container,
+    .info-container {
+        width: 50%;
+    }
 
-.menu-item.disabled i {
-    color: #666;
-}
-
-.menu-item .arrow {
-    margin-left: auto;
-    font-size: 12px;
-    color: #ccc;
+    .title {
+        font-size: 2.5rem;
+    }
 }
