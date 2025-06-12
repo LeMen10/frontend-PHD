@@ -2,32 +2,36 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-bottom: 1px solid #ddd;
     color: #fff;
+    background: linear-gradient(to right, #9f7aea, #ed64a6);
 }
 .logo-home {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.logo-text {
-    font-weight: 900;
-    font-size: 20px;
-    letter-spacing: 1.5px;
+.logo img{
+    width: 50px;
+    border-radius: 50%;
 }
 .logo-text span {
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
 }
-nav {
+.nav {
     display: flex;
     gap: 30px;
     font-size: 14px;
     color: #fff;
+    font-weight: 700;
 }
-nav a {
+.nav a:hover {
+    color: #ddd;
+}
+.nav a {
     text-decoration: none;
     color: #fff;
     white-space: nowrap;
