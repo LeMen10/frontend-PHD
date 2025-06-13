@@ -1,6 +1,6 @@
 import className from 'classnames/bind';
 import styles from './Contact.module.scss';
-import { AddressIcon, EmailIcon, FacebookIcon } from '~/components/Icons';
+import { AddressIcon, EmailIcon, FacebookIcon, PhoneIcon } from '~/components/Icons';
 import { Link } from 'react-router-dom';
 
 const cx = className.bind(styles);
@@ -13,7 +13,7 @@ const Contact = () => {
                     <div className={cx('text-center')}>
                         <h2 className={cx('title')}>Liên hệ với chúng tôi</h2>
                         <p className={cx('subtitle')}>
-                            Bạn có câu hỏi về các khóa học của chúng tôi? Hãy liên hệ ngay để được tư vấn miễn phí!
+                            Bạn có câu hỏi về các dịch vụ của chúng tôi? Hãy liên hệ ngay để được tư vấn MIỄN PHÍ!
                         </p>
                     </div>
                     <div className={cx('flex-container')}>
@@ -66,15 +66,22 @@ const Contact = () => {
                                     <div className={cx('info-item')}>
                                         <FacebookIcon className={cx('info-icon')} fill="#A855F7" />
                                         <div>
+                                            <h4 className={cx('info-title')}>Fanpage</h4>
+                                            <p className={cx('info-text')}>Phạm Hải Đăng Senpai</p>
+                                        </div>
+                                    </div>
+                                    <div className={cx('info-item')}>
+                                        <PhoneIcon className={cx('info-icon')} fill="#A855F7" />
+                                        <div>
                                             <h4 className={cx('info-title')}>Điện thoại</h4>
-                                            <p className={cx('info-text')}>+84 123 456 789</p>
+                                            <p className={cx('info-text')}>+84 327 906 965</p>
                                         </div>
                                     </div>
                                     <div className={cx('info-item')}>
                                         <EmailIcon className={cx('info-icon')} fill="#A855F7" />
                                         <div>
                                             <h4 className={cx('info-title')}>Email</h4>
-                                            <p className={cx('info-text')}>contact@streamerpro.vn</p>
+                                            <p className={cx('info-text')}>congtyphdstudio@gmail.com</p>
                                         </div>
                                     </div>
                                     <div className={cx('info-item')}>
@@ -82,7 +89,7 @@ const Contact = () => {
                                         <div>
                                             <h4 className={cx('info-title')}>Địa chỉ</h4>
                                             <p className={cx('info-text')}>
-                                                123 Đường Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh
+                                                Tầng 5, tòa nhà TTM Building, số 309 Bạch Đằng, Phường 2, Quận Bình Thạnh, TP. Hồ Chí Minh
                                             </p>
                                         </div>
                                     </div>

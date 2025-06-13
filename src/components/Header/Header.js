@@ -30,12 +30,6 @@ const Header = () => {
                         </p>
                     </nav>
 
-                    <div className={cx('search-write')}>
-                        <i aria-label="Search icon" className={cx('fas', 'fa-search', 'search-icon')} role="img"></i>
-                        <button aria-label="Write button" className={cx('write-button')}>
-                            Write
-                        </button>
-                    </div>
                 </header>
             </div>
         </>
