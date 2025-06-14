@@ -15,14 +15,14 @@
 }
 
 .title {
-    font-size: 2.25rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 16px;
     color: #1a202c;
 }
 
 .subtitle {
-    font-size: 1.125rem;
+    font-size: 2rem;
     color: #4a5568;
     max-width: 672px;
     margin: 0 auto;
@@ -58,15 +58,22 @@
     margin-bottom: 16px;
 }
 
-.service-title {
-    font-size: 1.25rem;
+.service-title, {
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 12px;
     color: #1a202c;
 }
 
+.service-price{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color:#9f7aea;
+}
+
 .service-description {
     color: #4a5568;
+    float: left;
 }
 
 .cta-section {
@@ -84,14 +91,14 @@
 }
 
 .cta-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
     margin-bottom: 16px;
 }
 
 .cta-text {
-    font-size: 1.125rem;
+    font-size: 1.75rem;
     color: white;
     margin-bottom: 24px;
 }

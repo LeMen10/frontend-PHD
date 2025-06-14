@@ -1,6 +1,6 @@
 .hero-section {
     background-color: #f7fafc;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .container {
@@ -28,7 +28,7 @@
 }
 
 .hero-description {
-    font-size: 1.125rem;
+    font-size: 2rem;
     color: #4a5568;
     margin-bottom: 32px;
 }
@@ -61,7 +61,7 @@
 
 @media (min-width: 768px) {
     .hero-section {
-        padding: 128px 0;
+        padding: 40px 0;
     }
 
     .hero-content {
