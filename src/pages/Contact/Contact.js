@@ -64,28 +64,28 @@ const Contact = () => {
                                 <h3 className={cx('card-title')}>Thông tin liên hệ</h3>
                                 <div>
                                     <div className={cx('info-item')}>
-                                        <FacebookIcon className={cx('info-icon')} fill="#A855F7" />
+                                        <FacebookIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
                                         <div>
                                             <h4 className={cx('info-title')}>Fanpage</h4>
                                             <p className={cx('info-text')}>Phạm Hải Đăng Senpai</p>
                                         </div>
                                     </div>
                                     <div className={cx('info-item')}>
-                                        <PhoneIcon className={cx('info-icon')} fill="#A855F7" />
+                                        <PhoneIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
                                         <div>
                                             <h4 className={cx('info-title')}>Điện thoại</h4>
                                             <p className={cx('info-text')}>+84 327 906 965</p>
                                         </div>
                                     </div>
                                     <div className={cx('info-item')}>
-                                        <EmailIcon className={cx('info-icon')} fill="#A855F7" />
+                                        <EmailIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
                                         <div>
                                             <h4 className={cx('info-title')}>Email</h4>
                                             <p className={cx('info-text')}>congtyphdstudio@gmail.com</p>
                                         </div>
                                     </div>
                                     <div className={cx('info-item')}>
-                                        <AddressIcon className={cx('info-icon')} fill="#A855F7" />
+                                        <AddressIcon className={cx('info-icon')} fill="#A855F7" width="50" height="30" />
                                         <div>
                                             <h4 className={cx('info-title')}>Địa chỉ</h4>
                                             <p className={cx('info-text')}>

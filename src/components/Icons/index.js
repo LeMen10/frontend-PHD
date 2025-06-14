@@ -262,7 +262,7 @@ export const PlayIcon = ({ className, width = '40', height = '40', fill }) => (
     </svg>
 );
 
-export const LinkedinIcon = ({ className, width = '20', height = '20', fill }) => (
+export const LinkedinIcon = ({ className, width = '30', height = '30', fill = '#fff' }) => (
     <svg
         className={className}
         width={width}
@@ -288,7 +288,7 @@ export const FacebookIcon = ({ className, width = '30', height = '30', fill = '#
     </svg>
 );
 
-export const GithubIcon = ({ className, width = '20', height = '20', fill }) => (
+export const GithubIcon = ({ className, width = '30', height = '30', fill = '#fff' }) => (
     <svg
         className={className}
         width={width}
@@ -339,4 +339,3 @@ export const PhoneIcon = ({ className, width = '25', height = '25', fill = '#aea
         <path d="M493.4 24.6c-23.1-23.1-61.4-23.1-84.5 0l-48 48c-18.7 18.7-23.1 46.7-10.4 69l25.6 44.4c-36.2 75.4-98.1 137.3-173.5 173.5l-44.4-25.6c-22.3-12.7-50.3-8.3-69 10.4l-48 48c-23.1 23.1-23.1 61.4 0 84.5l28.3 28.3c24.6 24.6 60.3 33.2 92.3 21.6C340.3 471.2 512 299.5 512 96.9c0-32-8.6-67.7-33.2-92.3l-28.4-28.3z" />
     </svg>
 );
-

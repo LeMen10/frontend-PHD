@@ -2,19 +2,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 0px 160px;
     border-bottom: 1px solid #ddd;
     color: #fff;
-    background: linear-gradient(to right, #9f7aea, #ed64a6);
+    background: linear-gradient(to right, #a05abd, #db4b5f);
 }
 .logo-home {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.logo img{
-    width: 50px;
+
+.logo-text{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 100px;
     border-radius: 50%;
+    height: 80px;
 }
 .logo-text span {
     font-weight: 400;
@@ -23,7 +30,7 @@ header {
 }
 .nav {
     display: flex;
-    gap: 30px;
+    gap: 52px;
     font-size: 14px;
     color: #fff;
     font-weight: 700;
@@ -35,6 +42,7 @@ header {
     text-decoration: none;
     color: #fff;
     white-space: nowrap;
+    font-size: 15px;
 }
 .slider {
     position: relative;
