@@ -1,12 +1,10 @@
 .hero-section {
-    background-color: #f7fafc;
-    padding: 40px 0;
+    background-color: #F9FAFB;
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 40px 160px;
 }
 
 .hero-content {
@@ -60,9 +58,6 @@
 }
 
 @media (min-width: 768px) {
-    .hero-section {
-        padding: 40px 0;
-    }
 
     .hero-content {
         flex-direction: row;

@@ -3,7 +3,7 @@
     // height: calc(100vh - var(--height-header) - var(--height-music-card));
 }
 
-.content{
+.content {
     border-radius: 10px;
     height: 100%;
     width: 100%;
@@ -37,4 +37,24 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 118px;
+    right: 50px;
+    z-index: 1000;
+    background: linear-gradient(to right, #a05abd, #db4b5f);
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        background: linear-gradient(to right, #814899, #b93e4f);
+    }
 }

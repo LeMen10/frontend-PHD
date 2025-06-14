@@ -16,6 +16,7 @@ const Header = () => {
                                 <img alt="" src={images.Logo} />
                             </Link>
                         </div>
+                        <p className={cx('logo-text')}>PHD Studio</p>
                     </div>
 
                     <nav aria-label="Primary navigation" className={cx('nav')}>
