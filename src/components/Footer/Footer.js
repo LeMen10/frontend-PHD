@@ -25,7 +25,7 @@ const Footer = () => {
                         <div className={cx('social-icons')} role="list">
                             <LinkedinIcon />
                             <GithubIcon />
-                            <FacebookIcon />
+                            <a href="https://www.facebook.com/groups/828823889050986/user/61573988580801?locale=vi_VN"><FacebookIcon /></a> 
                         </div>
                     </section>
                 </div>

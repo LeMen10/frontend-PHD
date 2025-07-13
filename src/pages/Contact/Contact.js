@@ -2,6 +2,7 @@ import className from 'classnames/bind';
 import styles from './Contact.module.scss';
 import { AddressIcon, EmailIcon, FacebookIcon, PhoneIcon } from '~/components/Icons';
 import { Link } from 'react-router-dom';
+import images from '~/assets/images/images';
 
 const cx = className.bind(styles);
 
@@ -19,44 +20,9 @@ const Contact = () => {
                     <div className={cx('flex-container')}>
                         <div className={cx('form-container')}>
                             <div className={cx('card')}>
-                                <h3 className={cx('card-title')}>Gửi tin nhắn cho chúng tôi</h3>
-                                <form>
-                                    <div className={cx('form-group')}>
-                                        <label htmlFor="name" className={cx('form-label')}>
-                                            Họ và tên
-                                        </label>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            className={cx('form-input')}
-                                            placeholder="Nhập họ tên của bạn"
-                                        />
-                                    </div>
-                                    <div className={cx('form-group')}>
-                                        <label htmlFor="email" className={cx('form-label')}>
-                                            Email
-                                        </label>
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            className={cx('form-input')}
-                                            placeholder="Nhập email của bạn"
-                                        />
-                                    </div>
-                                    <div className={cx('form-group')}>
-                                        <label htmlFor="message" className={cx('form-label')}>
-                                            Tin nhắn
-                                        </label>
-                                        <textarea
-                                            id="message"
-                                            className={cx('form-textarea')}
-                                            placeholder="Nhập nội dung tin nhắn"
-                                        ></textarea>
-                                    </div>
-                                    <button type="submit" className={cx('submit-button')}>
-                                        Gửi tin nhắn
-                                    </button>
-                                </form>
+                                <Link to="/">
+                                    <img className={cx('logo')} alt="" src={images.logo} />
+                                </Link>
                             </div>
                         </div>
                         <div className={cx('info-container')}>
@@ -64,10 +30,11 @@ const Contact = () => {
                                 <h3 className={cx('card-title')}>Thông tin liên hệ</h3>
                                 <div>
                                     <div className={cx('info-item')}>
+                                        <a></a>
                                         <FacebookIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
                                         <div>
                                             <h4 className={cx('info-title')}>Fanpage</h4>
-                                            <p className={cx('info-text')}>Phạm Hải Đăng Senpai</p>
+                                            <p className={cx('info-text')}>PHD Studio</p>
                                         </div>
                                     </div>
                                     <div className={cx('info-item')}>
@@ -100,7 +67,6 @@ const Contact = () => {
                                 <div>
                                     <p className={cx('hours-text')}>Thứ Hai - Thứ Sáu: 9:00 - 18:00</p>
                                     <p className={cx('hours-text')}>Thứ Bảy: 9:00 - 12:00</p>
-                                    <p className={cx('hours-text')}>Chủ Nhật: Đóng cửa</p>
                                 </div>
                             </div>
                         </div>
