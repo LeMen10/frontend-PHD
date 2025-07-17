@@ -12,15 +12,25 @@ const Home = () => {
                         <div className={cx('text-content')}>
                             <h2 className={cx('hero-title')}>Trở thành Streamer chuyên nghiệp</h2>
                             <p className={cx('hero-description')}>
-                                <strong>Bạn sẽ được các quyền lợi:</strong> <br/>
-                                ✅ Hỗ trợ xây kênh & đẩy livestream lên xu hướng<br/>
-                                ✅ Nhận toàn bộ tiền quảng cáo từ nhãn hàng<br/>
-                                ✅ Được cung cấp kênh TikTok & cấp quyền Live<br/>
-                                ✅ Hướng dẫn OBS, edit video, chống vi phạm bản quyền<br/>
-                                ✅ Miễn phí khóa học dựng video (PC & điện thoại)<br/>
+                                <strong>Bạn sẽ được các quyền lợi:</strong> <br />
+                                ✅ Hỗ trợ xây kênh & đẩy livestream lên xu hướng
+                                <br />
+                                ✅ Nhận toàn bộ tiền quảng cáo từ nhãn hàng
+                                <br />
+                                ✅ Được cung cấp kênh TikTok & cấp quyền Live
+                                <br />
+                                ✅ Hướng dẫn OBS, edit video, chống vi phạm bản quyền
+                                <br />
+                                ✅ Miễn phí khóa học dựng video (PC & điện thoại)
+                                <br />
                                 và nhiều quyền lợi khác.
                             </p>
-                            <button className={cx('hero-button')}>Live Now</button>
+                            <button
+                                className={cx('hero-button')}
+                                onClick={() => window.open('https://forms.gle/ZC8mAbxMLnZ3qRci8', '_blank')}
+                            >
+                                Live Now
+                            </button>
                         </div>
                         <div className={cx('image-content')}>
                             <img

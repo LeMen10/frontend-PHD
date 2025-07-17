@@ -30,7 +30,6 @@ const Contact = () => {
                                 <h3 className={cx('card-title')}>Thông tin liên hệ</h3>
                                 <div>
                                     <div className={cx('info-item')}>
-                                        <a></a>
                                         <FacebookIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
                                         <div>
                                             <h4 className={cx('info-title')}>Fanpage</h4>
