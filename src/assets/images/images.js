@@ -7,6 +7,7 @@ const images = {
 
     topVietnam: require('~/assets/images/top-vietnam.png'),
     logo: require('~/assets/images/logo.jpg'),
-    Logo: require('~/assets/images/Logo.png')
-}
+    Logo: require('~/assets/images/Logo.png'),
+    banner: require('~/assets/images/banner.jpg')
+};
 export default images
