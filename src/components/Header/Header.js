@@ -69,35 +69,16 @@ const Header = () => {
                         >
                             <div className={cx('navbar-nav', 'mx-auto', 'py-0')}>
                                 <Link to="/" className={cx('nav-item', 'nav-link', 'active')}>
-                                    Home
+                                    Trang chủ
                                 </Link>
                                 <Link to="/about" className={cx('nav-item', 'nav-link')}>
-                                    About
+                                    Giới thiệu
                                 </Link>
-                                <Link to="/course" className={cx('nav-item', 'nav-link')}>
-                                    Courses
+                                <Link to="/services" className={cx('nav-item', 'nav-link')}>
+                                    Dịch vụ
                                 </Link>
-                                <div className={cx('nav-item', 'dropdown')}>
-                                    <Link to="#" className={cx('nav-link', 'dropdown-toggle')} data-toggle="dropdown">
-                                        Pages
-                                    </Link>
-                                    <div className={cx('dropdown-menu', 'm-0')}>
-                                        <Link to="/detail" className={cx('dropdown-item')}>
-                                            Course Detail
-                                        </Link>
-                                        <Link to="/feature" className={cx('dropdown-item')}>
-                                            Our Features
-                                        </Link>
-                                        <Link to="/team" className={cx('dropdown-item')}>
-                                            Instructors
-                                        </Link>
-                                        <Link to="/testimonial" className={cx('dropdown-item')}>
-                                            Testimonial
-                                        </Link>
-                                    </div>
-                                </div>
                                 <Link to="/contact" className={cx('nav-item', 'nav-link')}>
-                                    Contact
+                                    Liên hệ
                                 </Link>
                             </div>
                             <Link
