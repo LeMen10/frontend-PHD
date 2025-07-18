@@ -4,7 +4,7 @@ import Service from "~/pages/Service/Service"
 
 const publicRouter = [
     {path: '/', component: Home},
-    {path: '/service', component: Service},
+    {path: '/services', component: Service},
     {path: '/contact', component: Contact},
 ]
 
