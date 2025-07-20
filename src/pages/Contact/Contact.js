@@ -33,9 +33,12 @@ const Contact = () => {
                                 nghe, tư vấn và đồng hành cùng bạn trong mọi bước xây dựng và phát triển kênh TikTok,
                                 YouTube một cách hiệu quả và bền vững.
                             </p>
-                            <Link to="/services" className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}>
+                            <p
+                                onClick={() => window.open('https://forms.gle/ZC8mAbxMLnZ3qRci8', '_blank')}
+                                className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}
+                            >
                                 Liên hệ ngay
-                            </Link>
+                            </p>
                         </div>
                     </div>
                 </div>

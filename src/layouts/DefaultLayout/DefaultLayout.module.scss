@@ -44,7 +44,7 @@
     bottom: 118px;
     right: 50px;
     z-index: 1000;
-    background: linear-gradient(to right, #a05abd, #db4b5f);
+    background: linear-gradient(to right, #59bba0, #74ad2a);
     color: #fff;
     border: none;
     padding: 6px 16px;
@@ -55,6 +55,6 @@
     transition: opacity 0.3s ease;
 
     &:hover {
-        background: linear-gradient(to right, #814899, #b93e4f);
+        background: linear-gradient(to right, #4ea58c, #5c8b1f);
     }
 }

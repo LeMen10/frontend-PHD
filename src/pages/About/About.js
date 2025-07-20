@@ -33,9 +33,6 @@ const About = () => {
                                 người đồng hành. Chúng tôi tạo ra giải pháp trọn gói giúp bạn phát triển thương hiệu cá
                                 nhân và nội dung số trên TikTok, YouTube, từ con số 0 đến chuyên nghiệp.
                             </p>
-                            <Link to="/services" className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}>
-                                Liên hệ ngay
-                            </Link>
                         </div>
                     </div>
                 </div>
