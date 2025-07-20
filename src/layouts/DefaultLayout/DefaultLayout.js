@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import className from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
-import Header from '~/components/Header/Header';
 import Footer from '~/components/Footer/Footer';
 import { useEffect, useState } from 'react';
 
@@ -27,7 +26,6 @@ const DefaultLayout = ({ children }) => {
     };
     return (
         <div className={cx('wrapper')}>
-            <Header />
             <div className={cx('container')}>
                 <div className={cx('content')}>{children}</div>
             </div>

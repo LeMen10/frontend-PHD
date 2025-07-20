@@ -1,24 +1,40 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+
 // import images from '~/assets/images/images';
 
 const cx = classNames.bind(styles);
 
 const Header = () => {
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsSticky(window.scrollY > 80);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
-            <div className={cx('header')}>
+            <div className={cx('header', { sticky: isSticky })}>
                 <div className={cx('container-fluid', 'bg-dark')}>
                     <div className={cx('row', 'py-2', 'px-lg-5')}>
                         <div className={cx('col-lg-6', 'text-center', 'text-lg-left', 'mb-2', 'mb-lg-0')}>
                             <div className={cx('d-inline-flex', 'align-items-center', 'text-white')}>
                                 <small>
-                                    <i className={cx('fa', 'fa-phone-alt', 'mr-2')}></i>+012 345 6789
+                                    <i className={cx('fa', 'fa-phone-alt', 'mr-2')}></i>+84 327 906 965
                                 </small>
                                 <small className={cx('px-3')}>|</small>
                                 <small>
-                                    <i className={cx('fa', 'fa-envelope', 'mr-2')}></i>info@example.com
+                                    <i className={cx('fa', 'fa-envelope', 'mr-2')}></i>congtyphdstudio@gmail.com
                                 </small>
                             </div>
                         </div>
@@ -38,7 +54,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className={cx('container-fluid', 'p-0', 'header-wr')}>
+                <div className={cx('container-fluid', 'p-0')}>
                     <nav
                         className={cx(
                             'navbar',
