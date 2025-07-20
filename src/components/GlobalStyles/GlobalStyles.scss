@@ -47,7 +47,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: var(--font-family-quicksand);
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -495,7 +495,7 @@ h6,
 }
 
 .display-4 {
-    font-size: 3.5rem;
+    font-size: 40px;
     font-weight: 300;
     line-height: 1.2;
 }
@@ -2523,14 +2523,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #2878eb;
-    border-color: #2878eb;
+    background-color: #09816b;
+    border-color: #09816b;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #1465d9;
-    border-color: #135fcd;
+    background-color: #076a58;
+    border-color: #076a58;
 }
 
 .btn-primary:focus,
@@ -6153,7 +6153,7 @@ a.close.disabled {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family-quicksand);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6278,7 +6278,7 @@ a.close.disabled {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family-quicksand);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -9771,7 +9771,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important;
+   font-family: var(--font-family-quicksand);
 }
 
 .text-justify {
@@ -10108,7 +10108,7 @@ h6,
 }
 
 .btn {
-    font-family: 'Jost', sans-serif;
+    font-family: var(--font-family-quicksand);
 }
 
 .btn-square {
@@ -10152,17 +10152,17 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-family: 'Jost', sans-serif;
-    padding: 30px 15px;
+    font-family: var(--font-family-quicksand);
+    padding: 36px 15px;
     font-size: 18px;
-    font-weight: 500;
-    color: #120f2d;
+    font-weight: 600;
+    color: #ededed;
     outline: none;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #2878eb;
+    color: #1adfc4;
 }
 
 @media (max-width: 991.98px) {
@@ -10334,10 +10334,4 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover {
     background: #2878eb;
-}
-
-/* custom */
-
-.header-wr {
-    border-bottom: 1px solid #333;
 }

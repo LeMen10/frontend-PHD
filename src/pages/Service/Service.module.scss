@@ -1,10 +1,6 @@
-.services-section {
-    background-color: #F9FAFB;
-}
-
 .container {
     margin: 0 auto;
-    padding: 40px 160px;
+    padding: 40px 100px;
 }
 
 .text-center {
@@ -13,14 +9,23 @@
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 16px;
     color: #1a202c;
 }
 
+.title-page {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding: 20px;
+    color: #1a202c;
+    background-color: #f9fafb;
+}
+
 .subtitle {
-    font-size: 2rem;
+    font-size: 18px;
     color: #4a5568;
     max-width: 672px;
     margin: 0 auto;
@@ -33,10 +38,9 @@
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: #ecf4ff;
     border-radius: 8px;
-    padding: 32px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.7rem 0.5rem rgba(0, 0, 0.3, 0.3) !important;
     transition: box-shadow 0.2s;
 }
 
@@ -57,16 +61,16 @@
 }
 
 .service-title {
-    font-size: 2rem;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 12px;
     color: #1a202c;
 }
 
-.service-price{
-    font-size: 1.75rem;
+.service-price {
+    font-size: 22px;
     font-weight: bold;
-    color:#9f7aea;
+    color: #9f7aea;
 }
 
 .service-description {
@@ -90,14 +94,14 @@
 }
 
 .cta-title {
-    font-size: 2rem;
+    font-size: 26px;
     font-weight: 700;
     color: white;
     margin-bottom: 16px;
 }
 
 .cta-text {
-    font-size: 1.75rem;
+    font-size: 20px;
     color: white;
     margin-bottom: 24px;
 }
@@ -123,7 +127,7 @@
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 38px;
     }
 }
 

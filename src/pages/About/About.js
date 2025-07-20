@@ -1,5 +1,5 @@
 import className from 'classnames/bind';
-import styles from './Contact.module.scss';
+import styles from './About.module.scss';
 import { AddressIcon, EmailIcon, FacebookIcon, PhoneIcon } from '~/components/Icons';
 import { Link } from 'react-router-dom';
 import images from '~/assets/images/images';
@@ -7,7 +7,7 @@ import Banner from '~/components/Banner/Banner';
 
 const cx = className.bind(styles);
 
-const Contact = () => {
+const About = () => {
     return (
         <>
             <section className={cx('contact-section')} id="contact">
@@ -26,12 +26,12 @@ const Contact = () => {
                             }}
                         >
                             <h1 className={cx('display-4', 'mb-4')} style={{ color: '#ffffff' }}>
-                                Bạn cần hỗ trợ? Có ngay PHD Studio.
+                                Chúng tôi là ai?
                             </h1>
                             <p style={{ color: '#ffffff', fontWeight: 500 }}>
-                                Dù bạn là cá nhân, doanh nghiệp hay nhà sáng tạo nội dung, chúng tôi luôn sẵn sàng lắng
-                                nghe, tư vấn và đồng hành cùng bạn trong mọi bước xây dựng và phát triển kênh TikTok,
-                                YouTube một cách hiệu quả và bền vững.
+                                PHD Studio được thành lập từ niềm tin rằng bất cứ ai cũng có thể tỏa sáng nếu có đúng
+                                người đồng hành. Chúng tôi tạo ra giải pháp trọn gói giúp bạn phát triển thương hiệu cá
+                                nhân và nội dung số trên TikTok, YouTube, từ con số 0 đến chuyên nghiệp.
                             </p>
                             <Link to="/services" className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}>
                                 Liên hệ ngay
@@ -41,7 +41,7 @@ const Contact = () => {
                 </div>
                 <div className={cx('container')}>
                     <div className={cx('text-center')}>
-                        <h2 className={cx('title')}>Liên hệ với chúng tôi</h2>
+                        <h2 className={cx('title')}>Về chúng tôi</h2>
                         <p className={cx('subtitle')}>
                             Bạn có câu hỏi về các dịch vụ của chúng tôi? Hãy liên hệ ngay để được tư vấn MIỄN PHÍ!
                         </p>
@@ -116,4 +116,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default About;

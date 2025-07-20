@@ -1,6 +1,8 @@
 import className from 'classnames/bind';
 import styles from './Home.module.scss';
 import images from '~/assets/images/images';
+import { Link } from 'react-router-dom';
+import Banner from '~/components/Banner/Banner';
 
 const cx = className.bind(styles);
 
@@ -8,7 +10,7 @@ const Home = () => {
     return (
         <>
             <section id="home" className={cx('hero-section')}>
-                <div className={cx('position-relative', 'w-100')} style={{ height: '100vh', overflow: 'hidden' }}>
+                {/* <div className={cx('position-relative', 'w-100')} style={{ height: '100vh', overflow: 'hidden' }}>
                     <img
                         src={images.banner}
                         alt="Banner"
@@ -21,7 +23,7 @@ const Home = () => {
                         style={{
                             top: 0,
                             left: 0,
-                            background: 'rgba(0, 0, 0, 0.5)',
+                            background: 'rgba(0, 0, 0, 0.3)',
                             zIndex: 1,
                         }}
                     ></div>
@@ -71,6 +73,41 @@ const Home = () => {
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div> */}
+                <div className={cx('position-relative', 'w-100')} style={{ height: '100vh', overflow: 'hidden' }}>
+                    <Banner />
+                    <div
+                        className={cx('container', 'h-100', 'd-flex', 'align-items-center', 'position-relative')}
+                        style={{ zIndex: 2 }}
+                    >
+                        <div
+                            className={cx('text-white')}
+                            style={{
+                                maxWidth: '720px',
+                                textAlign: 'left',
+                                paddingTop: '70px',
+                            }}
+                        >
+                            <h1 className={cx('display-4', 'mb-4')} style={{ color: '#ffffff' }}>
+                                Chào mừng đến với PHD Studio
+                            </h1>
+                            <p style={{ color: '#ffffff', fontWeight: 500 }}>
+                                PHD Studio là đơn vị chuyên nghiệp hàng đầu trong lĩnh vực đào tạo và hỗ trợ phát triển
+                                kênh TikTok dành cho cá nhân, doanh nghiệp và nhà sáng tạo nội dung. Với cam kết đồng
+                                hành trọn gói, PHD Studio cung cấp kênh TikTok sẵn sàng hoạt động, hỗ trợ cấp quyền
+                                livestream, hướng dẫn sử dụng OBS, edit video, chống vi phạm bản quyền, và đặc biệt là
+                                đẩy livestream lên xu hướng nhanh chóng.
+                            </p>
+                            <p style={{ color: '#ffffff', fontWeight: 500 }}>
+                                PHD Studio còn giúp creator nhận 100% tiền quảng cáo từ nhãn hàng, tặng khóa học dựng
+                                video miễn phí trên cả PC và điện thoại, cùng nhiều quyền lợi hấp dẫn khác – tất cả để
+                                giúp bạn tăng trưởng mạnh mẽ, chuyên nghiệp và bền vững trên nền tảng TikTok.
+                            </p>
+                            <Link to="/services" className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}>
+                                Liên hệ ngay
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -202,7 +239,7 @@ const Home = () => {
                     </div>
 
                     <div className={cx('row')}>
-                        <div className={cx('col-md-6', 'mb-4')}>
+                        <div className={cx('col-md-4', 'mb-4')}>
                             <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
                                 <h4>1. PHD Studio chuyên cung cấp những dịch vụ gì?</h4>
                                 <p>
@@ -216,7 +253,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className={cx('col-md-6', 'mb-4')}>
+                        <div className={cx('col-md-4', 'mb-4')}>
                             <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
                                 <h4>2. Tôi chưa có kinh nghiệm truyền thông, công ty có hỗ trợ từ đầu không?</h4>
                                 <p>
@@ -228,7 +265,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className={cx('col-md-6', 'mb-4')}>
+                        <div className={cx('col-md-4', 'mb-4')}>
                             <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
                                 <h4>3. Chi phí dịch vụ tại PHD Studio được tính như thế nào?</h4>
                                 <p>
@@ -240,7 +277,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className={cx('col-md-6', 'mb-4')}>
+                        <div className={cx('col-md-4', 'mb-4')}>
                             <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
                                 <h4>4. PHD Studio có nhận sản xuất video hoặc TVC riêng lẻ không?</h4>
                                 <p>
@@ -253,7 +290,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className={cx('col-md-6', 'mb-4')}>
+                        <div className={cx('col-md-4', 'mb-4')}>
                             <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
                                 <h4>5. Thời gian triển khai một dự án là bao lâu?</h4>
                                 <p>
@@ -265,7 +302,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className={cx('col-md-6', 'mb-4')}>
+                        <div className={cx('col-md-4', 'mb-4')}>
                             <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
                                 <h4>
                                     6. Tôi muốn phát triển kênh Tiktok/Youtube cá nhân, PHD Studio có gói dịch vụ phù

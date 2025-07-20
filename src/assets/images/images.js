@@ -10,5 +10,6 @@ const images = {
     Logo: require('~/assets/images/Logo.png'),
     banner: require('~/assets/images/banner.jpg'),
     camKet: require('~/assets/images/camKet.jpg'),
+    service: require('~/assets/images/service.jpg'),
 };
-export default images
+export default images;
