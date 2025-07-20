@@ -82,9 +82,12 @@ const Service = () => {
                                 lược, livestream, viết kịch bản đến dựng video chuyên nghiệp – tất cả đều được thiết kế
                                 để giúp bạn phát triển mạnh mẽ, bền vững và tạo dấu ấn riêng biệt trên nền tảng số.
                             </p>
-                            <Link to="/services" className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}>
+                            <p
+                                onClick={() => window.open('https://forms.gle/ZC8mAbxMLnZ3qRci8', '_blank')}
+                                className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}
+                            >
                                 Liên hệ ngay
-                            </Link>
+                            </p>
                         </div>
                     </div>
                 </div>

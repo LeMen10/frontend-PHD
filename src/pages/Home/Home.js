@@ -10,72 +10,6 @@ const Home = () => {
     return (
         <>
             <section id="home" className={cx('hero-section')}>
-                {/* <div className={cx('position-relative', 'w-100')} style={{ height: '100vh', overflow: 'hidden' }}>
-                    <img
-                        src={images.banner}
-                        alt="Banner"
-                        className={cx('position-absolute', 'w-100', 'h-100')}
-                        style={{ objectFit: 'cover', top: 0, left: 0 }}
-                    />
-
-                    <div
-                        className={cx('position-absolute', 'w-100', 'h-100')}
-                        style={{
-                            top: 0,
-                            left: 0,
-                            background: 'rgba(0, 0, 0, 0.3)',
-                            zIndex: 1,
-                        }}
-                    ></div>
-
-                    <div
-                        className={cx(
-                            'container',
-                            'h-100',
-                            'd-flex',
-                            'align-items-center',
-                            'justify-content-start',
-                            'position-relative',
-                        )}
-                        style={{ paddingLeft: '2rem', paddingRight: '2rem', zIndex: 1 }}
-                    >
-                        <div
-                            className={cx('d-flex', 'align-items-center', 'h-100')}
-                            style={{
-                                position: 'relative',
-                                zIndex: 2,
-                                padding: '2rem',
-                            }}
-                        >
-                            <div style={{ width: '50%' }}>
-                                <div className={cx('text-white')}>
-                                    <h1 className={cx('display-4', 'mb-4')} style={{ color: '#ffffff' }}>
-                                        Trở thành Streamer chuyên nghiệp
-                                    </h1>
-
-                                    <p style={{ color: '#ffffff' }}>
-                                        PHD Studio là đơn vị chuyên nghiệp hàng đầu trong lĩnh vực đào tạo và hỗ trợ
-                                        phát triển kênh TikTok dành cho cá nhân, doanh nghiệp và nhà sáng tạo nội dung.
-                                        Với cam kết đồng hành trọn gói, PHD Studio cung cấp kênh TikTok sẵn sàng hoạt
-                                        động, hỗ trợ cấp quyền livestream, hướng dẫn sử dụng OBS, edit video, chống vi
-                                        phạm bản quyền, và đặc biệt là đẩy livestream lên xu hướng nhanh chóng.
-                                    </p>
-
-                                    <p style={{ color: '#ffffff' }}>
-                                        PHD Studio còn giúp creator nhận 100% tiền quảng cáo từ nhãn hàng, tặng khóa học
-                                        dựng video miễn phí trên cả PC và điện thoại, cùng nhiều quyền lợi hấp dẫn khác
-                                        – tất cả để giúp bạn tăng trưởng mạnh mẽ, chuyên nghiệp và bền vững trên nền
-                                        tảng TikTok.
-                                    </p>
-
-                                    <a href="#dangky" style={{ color: '#ff00ff', textDecoration: 'underline' }}>
-                                        Đăng ký ngay
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
                 <div className={cx('position-relative', 'w-100')} style={{ height: '100vh', overflow: 'hidden' }}>
                     <Banner />
                     <div
@@ -105,9 +39,12 @@ const Home = () => {
                                 video miễn phí trên cả PC và điện thoại, cùng nhiều quyền lợi hấp dẫn khác – tất cả để
                                 giúp bạn tăng trưởng mạnh mẽ, chuyên nghiệp và bền vững trên nền tảng TikTok.
                             </p>
-                            <Link to="/services" className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}>
+                            <p
+                                onClick={() => window.open('https://forms.gle/ZC8mAbxMLnZ3qRci8', '_blank')}
+                                className={cx('btn', 'btn-primary', 'btn-lg', 'mt-3')}
+                            >
                                 Liên hệ ngay
-                            </Link>
+                            </p>
                         </div>
                     </div>
                 </div>
