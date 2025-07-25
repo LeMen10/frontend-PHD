@@ -53,6 +53,11 @@ const Banner = () => {
                     <h1 className={cx('m-0', 'text-uppercase', 'text-primary')}>
                         <i className={cx('fa', 'fa-book-reader', 'mr-3')}></i>PHD Studio
                     </h1>
+                    {/* <img
+                        src={images.logo} 
+                        alt="PHD Studio Logo"
+                        className={cx('logo-img')} 
+                    /> */}
                 </Link>
                 <button type="button" className={cx('navbar-toggler')} onClick={() => setMenuOpen(true)}>
                     <span className={cx('navbar-toggler-icon')}>

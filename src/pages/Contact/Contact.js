@@ -42,78 +42,91 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className={cx('container')}>
-                    <div className={cx('text-center')}>
-                        <h2 className={cx('title')}>Liên hệ với chúng tôi</h2>
-                        <p className={cx('subtitle')}>
-                            Bạn có câu hỏi về các dịch vụ của chúng tôi? Hãy liên hệ ngay để được tư vấn MIỄN PHÍ!
-                        </p>
-                    </div>
-                    <div className={cx('flex-container')}>
-                        <div className={cx('form-container')}>
-                            <div className={cx('card')}>
-                                <Link to="/">
-                                    <img className={cx('logo')} alt="" src={images.logo} />
-                                </Link>
+                <div className="container-fluid py-5">
+            <div className="container py-5">
+                <div className="row align-items-center">
+                    <div className="col-lg-5 mb-5 mb-lg-0">
+                        <div className="bg-light d-flex flex-column justify-content-center px-5" style={{ height: '450px' }}>
+                            <div className="d-flex align-items-center mb-5">
+                                <div className="btn-icon bg-primary mr-4">
+                                    <i className="fa fa-2x fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div className="mt-n1">
+                                    <h4>Our Location</h4>
+                                    <p className="m-0">Tầng 5, TTM Building, 309 Bạch Đằng, P.2, Q. Bình Thạnh, TP.HCM</p>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center mb-5">
+                                <div className="btn-icon bg-secondary mr-4">
+                                    <i className="fa fa-2x fa-phone-alt text-white"></i>
+                                </div>
+                                <div className="mt-n1">
+                                    <h4>Call Us</h4>
+                                    <p className="m-0">+84 327 906 965</p>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <div className="btn-icon bg-warning mr-4">
+                                    <i className="fa fa-2x fa-envelope text-white"></i>
+                                </div>
+                                <div className="mt-n1">
+                                    <h4>Email Us</h4>
+                                    <p className="m-0">congtyphdstudio@gmail.com</p>
+                                </div>
                             </div>
                         </div>
-                        <div className={cx('info-container')}>
-                            <div className={cx('card', 'contact-info')}>
-                                <h3 className={cx('card-title')}>Thông tin liên hệ</h3>
-                                <div>
-                                    <div className={cx('info-item')}>
-                                        <FacebookIcon
-                                            className={cx('info-icon')}
-                                            fill="#A855F7"
-                                            width="30"
-                                            height="30"
+                    </div>
+                    <div className="col-lg-7">
+                        <div className="section-title position-relative mb-4">
+                            <h1 className="display-4">Send Us A Message</h1>
+                        </div>
+                        <div className="contact-form">
+                            <form>
+                                <div className="row">
+                                    <div className="col-6 form-group">
+                                        <input
+                                            type="text"
+                                            className="form-control border-top-0 border-right-0 border-left-0 p-0"
+                                            placeholder="Your Name"
+                                            required
                                         />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Fanpage</h4>
-                                            <p className={cx('info-text')}>PHD Studio</p>
-                                        </div>
                                     </div>
-                                    <div className={cx('info-item')}>
-                                        <PhoneIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Điện thoại</h4>
-                                            <p className={cx('info-text')}>+84 327 906 965</p>
-                                        </div>
-                                    </div>
-                                    <div className={cx('info-item')}>
-                                        <EmailIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Email</h4>
-                                            <p className={cx('info-text')}>congtyphdstudio@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div className={cx('info-item')}>
-                                        <AddressIcon
-                                            className={cx('info-icon')}
-                                            fill="#A855F7"
-                                            width="50"
-                                            height="30"
+                                    <div className="col-6 form-group">
+                                        <input
+                                            type="email"
+                                            className="form-control border-top-0 border-right-0 border-left-0 p-0"
+                                            placeholder="Your Email"
+                                            required
                                         />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Địa chỉ</h4>
-                                            <p className={cx('info-text')}>
-                                                Tầng 5, tòa nhà TTM Building, số 309 Bạch Đằng, Phường 2, Quận Bình
-                                                Thạnh, TP. Hồ Chí Minh
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className={cx('hours-card')}>
-                                <h3 className={cx('hours-title')}>Giờ làm việc</h3>
-                                <div>
-                                    <p className={cx('hours-text')}>Thứ Hai - Thứ Sáu: 9:00 - 18:00</p>
-                                    <p className={cx('hours-text')}>Thứ Bảy: 9:00 - 12:00</p>
+                                <div className="form-group">
+                                    <input
+                                        type="text"
+                                        className="form-control border-top-0 border-right-0 border-left-0 p-0"
+                                        placeholder="Subject"
+                                        required
+                                    />
                                 </div>
-                            </div>
+                                <div className="form-group">
+                                    <textarea
+                                        className="form-control border-top-0 border-right-0 border-left-0 p-0"
+                                        rows="5"
+                                        placeholder="Message"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div>
+                                    <button className="btn btn-primary py-3 px-5" type="submit">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
             </section>
         </>
     );
