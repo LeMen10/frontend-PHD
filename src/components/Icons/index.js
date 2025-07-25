@@ -352,3 +352,55 @@ export const BarsIcon = ({ className, width = '25', height = '25', fill = '#ffff
         <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
     </svg>
 );
+
+export const RocketIcon = ({ className, width = '25', height = '25', fill = '#ffffff' }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    fill={fill}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+  >
+    <path d="M505 19.1C506.5 8.3 497.7-.5 486.9 .1c-70.2 3.9-135.8 34.3-184.4 82.9L256 129.4 234.6 108 193.6 149c-2.5 2.5-3.7 5.9-3.3 9.4l6.3 52.1L80.4 327.7c-5.1 5.1-7.8 12.2-7.5 19.4l3.5 86.6-56.3 56.3c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l56.3-56.3 86.6 3.5c7.3 .3 14.3-2.4 19.4-7.5L301.5 315.4l52.1 6.3c3.4 .4 6.9-.7 9.4-3.3l41-41-21.4-21.4 46.3-46.3c48.6-48.6 79-114.2 82.9-184.4z" />
+  </svg>
+);
+
+export const LightbulbIcon = ({ className, width = '25', height = '25', fill = '#ffffff' }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    fill={fill}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 384 512"
+  >
+    <path d="M96 454.7c0 6.9 5.6 12.5 12.5 12.5h167c6.9 0 12.5-5.6 12.5-12.5V416H96v38.7zM192 0C86 0 0 86 0 192c0 66 34 124 85.6 157.4L96 416c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32l10.4-66.6C350 316 384 258 384 192 384 86 298 0 192 0z" />
+  </svg>
+);
+
+export const HeadphonesIcon = ({ className, width = '25', height = '25', fill = '#ffffff' }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    fill={fill}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+  >
+    <path d="M256 48C141.1 48 48 141.1 48 256v128c0 17.7 14.3 32 32 32h16c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32H80c0-97 79-176 176-176s176 79 176 176h-16c-17.7 0-32 14.3-32 32v128c0 17.7 14.3 32 32 32h16c17.7 0 32-14.3 32-32V256c0-114.9-93.1-208-208-208z" />
+  </svg>
+);
+
+export const ShieldIcon = ({ className, width = '25', height = '25', fill = '#ffffff' }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    fill={fill}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+  >
+    <path d="M240 4.3c8.5-2.9 23.5-2.9 32 0l192 64c13 4.3 22 16.6 22 30.3c0 114.5-64.3 218.7-165.4 270.2L256 480l-64.6-111.2C90.3 317.3 26 213.1 26 98.6c0-13.7 9-26 22-30.3l192-64z" />
+  </svg>
+);

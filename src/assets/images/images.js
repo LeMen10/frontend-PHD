@@ -8,6 +8,7 @@ const images = {
     topVietnam: require('~/assets/images/top-vietnam.png'),
     logo: require('~/assets/images/logo.jpg'),
     Logo: require('~/assets/images/Logo.png'),
+    // LogoNew: require('~/assets/images/LogoNew.jpg'),
     banner: require('~/assets/images/banner.jpg'),
     camKet: require('~/assets/images/camKet.jpg'),
     service: require('~/assets/images/service.jpg'),

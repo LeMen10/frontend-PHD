@@ -1,6 +1,6 @@
 import className from 'classnames/bind';
 import styles from './About.module.scss';
-import { AddressIcon, EmailIcon, FacebookIcon, PhoneIcon } from '~/components/Icons';
+import { AddressIcon, EmailIcon, FacebookIcon, PhoneIcon, ShieldIcon, RocketIcon, HeadphonesIcon,LightbulbIcon } from '~/components/Icons';
 import { Link } from 'react-router-dom';
 import images from '~/assets/images/images';
 import Banner from '~/components/Banner/Banner';
@@ -36,78 +36,91 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className={cx('container')}>
-                    <div className={cx('text-center')}>
-                        <h2 className={cx('title')}>Về chúng tôi</h2>
-                        <p className={cx('subtitle')}>
-                            Bạn có câu hỏi về các dịch vụ của chúng tôi? Hãy liên hệ ngay để được tư vấn MIỄN PHÍ!
-                        </p>
-                    </div>
-                    <div className={cx('flex-container')}>
-                        <div className={cx('form-container')}>
-                            <div className={cx('card')}>
-                                <Link to="/">
-                                    <img className={cx('logo')} alt="" src={images.logo} />
-                                </Link>
+                <div className={cx('container-about')}>
+                        <div className={cx('about-container')}>
+                        {/* Hero Section */}
+                        <div className={cx('hero-section')}>
+                            
+                            <h1>Về PHD Studio</h1>
+                          
+                        </div>
+                        {/* Introduction */}
+                        <div className={cx('intro-section')}>
+                            <p className={cx('intro-text')}>
+                            PHD Studio là đơn vị tiên phong trong lĩnh vực đào tạo và hỗ trợ
+                            phát triển nội dung số, đặc biệt trên các nền tảng như TikTok và
+                            YouTube. Chúng tôi ra đời với sứ mệnh đồng hành cùng các cá nhân,
+                            doanh nghiệp và nhà sáng tạo nội dung trên hành trình xây dựng
+                            thương hiệu cá nhân, mở rộng tầm ảnh hưởng và khai thác hiệu quả
+                            tiềm năng của nền kinh tế sáng tạo.
+                            </p>
+                            <p className={cx('intro-text')}>
+                            Với đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực truyền
+                            thông, marketing và sản xuất nội dung, PHD Studio mang đến giải
+                            pháp toàn diện: từ tư vấn định hướng chiến lược nội dung, hỗ trợ
+                            kỹ thuật livestream, cấp quyền TikTok, dựng video chuẩn xu hướng,
+                            đến chống vi phạm bản quyền và tối ưu hiệu quả quảng cáo. Không
+                            chỉ cung cấp các công cụ, chúng tôi còn đồng hành, đào tạo và phát
+                            triển kỹ năng cho khách hàng để tự tin làm chủ nền tảng và tạo dấu
+                            ấn riêng biệt.
+                            </p>
+                        </div>
+                        {/* Core Values */}
+                        <div className={cx('values-section')}>
+                            <div className={cx('value-card')}>
+                            <div className={cx('icon-container')}>
+                                <LightbulbIcon className={cx('value-icon')} />
+                            </div>
+                            <h3>Sáng tạo dẫn lối – Kết quả làm chuẩn</h3>
+                            <p>
+                                Tại PHD Studio, chúng tôi không chỉ làm nội dung – chúng tôi tạo
+                                ra trải nghiệm khác biệt. Mỗi ý tưởng được khởi nguồn từ nhu cầu
+                                thực tế, được hiện thực hóa bằng chiến lược và đo lường bằng kết
+                                quả.
+                            </p>
+                            <blockquote>
+                                Chúng tôi sáng tạo không phải để đẹp hơn – mà để hiệu quả hơn.
+                            </blockquote>
+                            </div>
+                            <div className={cx('value-card')}>
+                            <div className={cx('icon-container')}>
+                                <HeadphonesIcon className={cx('value-icon')} />
+                            </div>
+                            <h3>Lắng nghe sâu – Hiểu đúng việc – Làm đúng cách</h3>
+                            <p>
+                                Mỗi khách hàng là một hành trình riêng biệt. PHD Studio luôn đặt
+                                mình vào vị trí người đối diện để hiểu đúng mong muốn, văn hóa
+                                thương hiệu và tập khán giả. Từ đó, chúng tôi tư duy giải pháp
+                                thay vì chỉ đơn thuần "làm theo yêu cầu".
+                            </p>
+                            </div>
+                            <div className={cx('value-card')}>
+                            <div className={cx('icon-container')}>
+                                <RocketIcon className={cx('value-icon')} />
+                            </div>
+                            <h3>Luôn vượt chuẩn – Luôn vượt giới hạn</h3>
+                            <p>
+                                Chúng tôi không hài lòng với "đủ đúng" – mà luôn hướng đến "vượt
+                                kỳ vọng". Tại PHD Studio, mỗi thành viên đều mang tinh thần học
+                                hỏi, chủ động và dám làm khác. Vì chỉ khi vượt ra khỏi vùng an
+                                toàn, bạn mới tạo ra điều chưa từng tồn tại.
+                            </p>
+                            </div>
+                            <div className={cx('value-card')}>
+                            <div className={cx('icon-container')}>
+                                <ShieldIcon className={cx('value-icon')} />
+                            </div>
+                            <h3>Rõ ràng từ đầu – Bền vững về sau</h3>
+                            <p>
+                                Niềm tin không đến từ lời nói – mà từ sự minh bạch trong cách
+                                làm việc. PHD Studio cam kết rõ ràng về quy trình, ngân sách,
+                                timeline và trách nhiệm với từng sản phẩm. Chúng tôi xây dựng
+                                mối quan hệ đối tác lâu dài, không chỉ một lần cộng tác.
+                            </p>
                             </div>
                         </div>
-                        <div className={cx('info-container')}>
-                            <div className={cx('card', 'contact-info')}>
-                                <h3 className={cx('card-title')}>Thông tin liên hệ</h3>
-                                <div>
-                                    <div className={cx('info-item')}>
-                                        <FacebookIcon
-                                            className={cx('info-icon')}
-                                            fill="#A855F7"
-                                            width="30"
-                                            height="30"
-                                        />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Fanpage</h4>
-                                            <p className={cx('info-text')}>PHD Studio</p>
-                                        </div>
-                                    </div>
-                                    <div className={cx('info-item')}>
-                                        <PhoneIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Điện thoại</h4>
-                                            <p className={cx('info-text')}>+84 327 906 965</p>
-                                        </div>
-                                    </div>
-                                    <div className={cx('info-item')}>
-                                        <EmailIcon className={cx('info-icon')} fill="#A855F7" width="30" height="30" />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Email</h4>
-                                            <p className={cx('info-text')}>congtyphdstudio@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div className={cx('info-item')}>
-                                        <AddressIcon
-                                            className={cx('info-icon')}
-                                            fill="#A855F7"
-                                            width="50"
-                                            height="30"
-                                        />
-                                        <div>
-                                            <h4 className={cx('info-title')}>Địa chỉ</h4>
-                                            <p className={cx('info-text')}>
-                                                Tầng 5, tòa nhà TTM Building, số 309 Bạch Đằng, Phường 2, Quận Bình
-                                                Thạnh, TP. Hồ Chí Minh
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={cx('hours-card')}>
-                                <h3 className={cx('hours-title')}>Giờ làm việc</h3>
-                                <div>
-                                    <p className={cx('hours-text')}>Thứ Hai - Thứ Sáu: 9:00 - 18:00</p>
-                                    <p className={cx('hours-text')}>Thứ Bảy: 9:00 - 12:00</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
             </section>
         </>
     );

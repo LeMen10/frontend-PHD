@@ -68,7 +68,8 @@ const Header = () => {
                     >
                         <Link to="/" className={cx('navbar-brand', 'ml-lg-3')}>
                             <h1 className={cx('m-0', 'text-uppercase', 'text-primary')}>
-                                <i className={cx('fa', 'fa-book-reader', 'mr-3')}></i>PHD Studio
+                                {/* <i className={cx('fa', 'fa-book-reader', 'mr-3')}></i>PHD Studio */}
+                                
                             </h1>
                         </Link>
                         <button
