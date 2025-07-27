@@ -44,11 +44,6 @@ const MobileMenu = ({ onClose }) => {
 
                         <hr />
                         <div className={cx('phone')}>+84 969 699 879</div>
-                        <div className={cx('action-buttons')}>
-                            <Link to="/" className={cx('login')} >
-                                Đăng nhập
-                            </Link>
-                        </div>
                     </nav>
                 </div>
             </div>

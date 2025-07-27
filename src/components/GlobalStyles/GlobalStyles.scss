@@ -290,6 +290,7 @@ button:not(:disabled),
 [type='reset']:not(:disabled),
 [type='submit']:not(:disabled) {
     cursor: pointer;
+    color: black;
 }
 
 button::-moz-focus-inner,
@@ -9892,7 +9893,10 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-    color: #2878eb !important;
+    color: #fff !important;
+    // text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+//     -webkit-text-stroke-width: 1px;
+//     -webkit-text-stroke-color: black;
 }
 
 a.text-primary:hover,

@@ -52,7 +52,7 @@ const Contact = () => {
                                     <i className="fa fa-2x fa-map-marker-alt text-white"></i>
                                 </div>
                                 <div className="mt-n1">
-                                    <h4>Our Location</h4>
+                                    <h4>Địa chỉ</h4>
                                     <p className="m-0">Tầng 5, TTM Building, 309 Bạch Đằng, P.2, Q. Bình Thạnh, TP.HCM</p>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                                     <i className="fa fa-2x fa-phone-alt text-white"></i>
                                 </div>
                                 <div className="mt-n1">
-                                    <h4>Call Us</h4>
+                                    <h4>Điện thoại</h4>
                                     <p className="m-0">+84 327 906 965</p>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                                     <i className="fa fa-2x fa-envelope text-white"></i>
                                 </div>
                                 <div className="mt-n1">
-                                    <h4>Email Us</h4>
+                                    <h4>Email</h4>
                                     <p className="m-0">congtyphdstudio@gmail.com</p>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-7">
                         <div className="section-title position-relative mb-4">
-                            <h1 className="display-4">Send Us A Message</h1>
+                            <h1 className="display-4">Liên hệ với chúng tôi</h1>
                         </div>
                         <div className="contact-form">
                             <form>
@@ -87,7 +87,7 @@ const Contact = () => {
                                         <input
                                             type="text"
                                             className="form-control border-top-0 border-right-0 border-left-0 p-0"
-                                            placeholder="Your Name"
+                                            placeholder="Họ và Tên"
                                             required
                                         />
                                     </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                                         <input
                                             type="email"
                                             className="form-control border-top-0 border-right-0 border-left-0 p-0"
-                                            placeholder="Your Email"
+                                            placeholder="Email"
                                             required
                                         />
                                     </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         className="form-control border-top-0 border-right-0 border-left-0 p-0"
-                                        placeholder="Subject"
+                                        placeholder="Chủ đề"
                                         required
                                     />
                                 </div>
@@ -112,13 +112,13 @@ const Contact = () => {
                                     <textarea
                                         className="form-control border-top-0 border-right-0 border-left-0 p-0"
                                         rows="5"
-                                        placeholder="Message"
+                                        placeholder="Mô tả nội dung"
                                         required
                                     ></textarea>
                                 </div>
                                 <div>
                                     <button className="btn btn-primary py-3 px-5" type="submit">
-                                        Send Message
+                                        Gửi
                                     </button>
                                 </div>
                             </form>
