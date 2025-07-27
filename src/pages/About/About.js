@@ -33,28 +33,7 @@ const About = () => {
                                 người đồng hành. Chúng tôi tạo ra giải pháp trọn gói giúp bạn phát triển thương hiệu cá
                                 nhân và nội dung số trên TikTok, YouTube, từ con số 0 đến chuyên nghiệp.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={cx('container-about')}>
-                        <div className={cx('about-container')}>
-                        {/* Hero Section */}
-                        <div className={cx('hero-section')}>
-                            
-                            <h1>Về PHD Studio</h1>
-                          
-                        </div>
-                        {/* Introduction */}
-                        <div className={cx('intro-section')}>
-                            <p className={cx('intro-text')}>
-                            PHD Studio là đơn vị tiên phong trong lĩnh vực đào tạo và hỗ trợ
-                            phát triển nội dung số, đặc biệt trên các nền tảng như TikTok và
-                            YouTube. Chúng tôi ra đời với sứ mệnh đồng hành cùng các cá nhân,
-                            doanh nghiệp và nhà sáng tạo nội dung trên hành trình xây dựng
-                            thương hiệu cá nhân, mở rộng tầm ảnh hưởng và khai thác hiệu quả
-                            tiềm năng của nền kinh tế sáng tạo.
-                            </p>
-                            <p className={cx('intro-text')}>
+                            <p style={{ color: '#ffffff', fontWeight: 500 }}>
                             Với đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực truyền
                             thông, marketing và sản xuất nội dung, PHD Studio mang đến giải
                             pháp toàn diện: từ tư vấn định hướng chiến lược nội dung, hỗ trợ
@@ -65,7 +44,25 @@ const About = () => {
                             ấn riêng biệt.
                             </p>
                         </div>
-                        {/* Core Values */}
+                    </div>
+                </div>
+                <div className={cx('container-about')}>
+                        <div className={cx('about-container')}>
+                        <div className={cx('hero-section')}>
+                            
+                            <h1>Về PHD Studio</h1>
+                          
+                        </div>
+                        <div className={cx('intro-section')}>
+                            <p className={cx('intro-text')}>
+                            PHD Studio là đơn vị tiên phong trong lĩnh vực đào tạo và hỗ trợ
+                            phát triển nội dung số, đặc biệt trên các nền tảng như TikTok và
+                            YouTube. Chúng tôi ra đời với sứ mệnh đồng hành cùng các cá nhân,
+                            doanh nghiệp và nhà sáng tạo nội dung trên hành trình xây dựng
+                            thương hiệu cá nhân, mở rộng tầm ảnh hưởng và khai thác hiệu quả
+                            tiềm năng của nền kinh tế sáng tạo.
+                            </p>
+                        </div>
                         <div className={cx('values-section')}>
                             <div className={cx('value-card')}>
                             <div className={cx('icon-container')}>
