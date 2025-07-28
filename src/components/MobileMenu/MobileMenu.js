@@ -21,13 +21,6 @@ const MobileMenu = ({ onClose }) => {
                             Trang chủ
                         </Link>
                         <Link
-                            to="/services"
-                            onClick={onClose}
-                            className={cx('nav-item', { active: pathname === '/services' })}
-                        >
-                            Dịch vụ
-                        </Link>
-                        <Link
                             to="/about"
                             onClick={onClose}
                             className={cx('nav-item', { active: pathname === '/about' })}

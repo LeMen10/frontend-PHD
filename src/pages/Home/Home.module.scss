@@ -88,3 +88,168 @@
         line-height: 1.6;
     }
 }
+
+.title {
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a202c;
+}
+
+.title-page {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding: 20px;
+    color: #1a202c;
+    background-color: #f9fafb;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #4a5568;
+    max-width: 672px;
+    margin: 0 auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.service-card {
+    background-color: #ecf4ff;
+    border-radius: 8px;
+    box-shadow: 0 0.7rem 0.5rem rgba(0, 0, 0.3, 0.3) !important;
+    transition: box-shadow 0.2s;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-icon {
+    color: #9f7aea;
+    margin-bottom: 16px;
+}
+
+.service-content .service-title {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a202c;
+}
+
+.service-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #9f7aea;
+}
+
+.service-description {
+    color: #4a5568;
+    float: left;
+    text-align: left;
+}
+
+.cta-section {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.cta-card {
+    background: linear-gradient(to right, #59bba0, #74ad2a);
+    border-radius: 8px;
+    padding: 32px 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.cta-text {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #9f7aea;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #f7fafc;
+}
+
+@media (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 38px;
+    }
+    .service-title{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.faq-item {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #f8f9fa;
+}
+
+.faq-item h4 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+.faq-item.active h4 {
+    color: #007bff;
+}
+
+.faq-answer {
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.faq-answer.open {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 0.75rem;
+}
+
+.section-title h1{
+    font-weight: 700;
+}

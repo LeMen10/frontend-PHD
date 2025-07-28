@@ -33,7 +33,7 @@ const Banner = () => {
             <div
                 className={cx('position-absolute', 'top-0', 'start-0', 'w-100', 'h-100')}
                 style={{
-                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
                     zIndex: 1,
                 }}
             ></div>
@@ -50,8 +50,8 @@ const Banner = () => {
                 }}
             >
                 <Link to="/" className={cx('navbar-brand', 'ml-lg-3')}>
-                    <h1 className={cx('m-0', 'text-uppercase', 'text-primary')}>
-                        <i className={cx('fa', 'fa-book-reader', 'mr-3')}></i>PHD Studio
+                    <h1 className={cx('m-0', 'text-uppercase', 'logo')}>
+                        PHD Studio
                     </h1>
                 </Link>
                 <button type="button" className={cx('navbar-toggler')} onClick={() => setMenuOpen(true)}>
@@ -67,12 +67,6 @@ const Banner = () => {
                         <Link to="/" className={cx('nav-item', 'nav-link', { active: pathname === '/' })}>
                             Trang chủ
                         </Link>
-                        <Link
-                            to="/services"
-                            className={cx('nav-item', 'nav-link', { active: pathname === '/services' })}
-                        >
-                            Dịch vụ
-                        </Link>
                         <Link to="/about" className={cx('nav-item', 'nav-link', { active: pathname === '/about' })}>
                             Giới thiệu
                         </Link>
@@ -80,6 +74,9 @@ const Banner = () => {
                             Liên hệ
                         </Link>
                     </div>
+                    <Link to="/" className={cx('btn', 'btn-primary', 'py-2', 'px-4', 'd-none', 'd-lg-block')}>
+                        +84 327 906 965
+                    </Link>
                 </div>
             </nav>
         </>
