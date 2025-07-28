@@ -147,9 +147,7 @@ const Home = () => {
                         className={cx('container', 'h-100', 'd-flex', 'align-items-center', 'position-relative')}
                         style={{ zIndex: 2 }}
                     >
-                        <div
-                            className={cx('text-white', 'banner-content')}
-                        >
+                        <div className={cx('text-white', 'banner-content')}>
                             <h1 className={cx('display-4', 'mb-4')} style={{ color: '#ffffff' }}>
                                 Chào mừng đến với PHD Studio
                             </h1>
@@ -179,8 +177,7 @@ const Home = () => {
                     <div className="text-center mb-5">
                         <h2 className={cx('title', 'mb-3')}>Dịch vụ của chúng tôi</h2>
                         <p className={cx('subtitle')}>
-                            Chúng tôi cung cấp các dịch vụ đào tạo toàn diện để giúp bạn trở thành một streamer thành
-                            công
+                            Chúng tôi cung cấp các dịch vụ chuyên về sáng tạo nội dung.
                         </p>
                     </div>
 
@@ -223,7 +220,12 @@ const Home = () => {
                                     Tuyển dụng, đào tạo Streamer chuyên nghiệp, hỗ trợ xây dựng thương hiệu cá nhân và
                                     phát triển kênh stream của bạn.
                                 </p>
-                                <button className={cx('cta-button', 'btn', 'btn-light', 'fw-bold')}>Ứng tuyển ngay</button>
+                                <button
+                                    onClick={() => window.open('https://forms.gle/ZC8mAbxMLnZ3qRci8', '_blank')}
+                                    className={cx('cta-button', 'btn', 'btn-light', 'fw-bold')}
+                                >
+                                    Ứng tuyển ngay
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -355,18 +357,10 @@ const Home = () => {
                         </div>
                     </div>
 
-
                     <div className={cx('row')}>
                         {faqData.map((item, index) => (
                             <div key={index} className={cx('col-md-4', 'mb-4')}>
-                                <div
-                                    className={cx(
-                                        'faq-item',
-                                        openIndex === index && 'active',
-                                        'p-4',
-                                        'bg-light',
-                                    )}
-                                >
+                                <div className={cx('faq-item', openIndex === index && 'active', 'p-4', 'bg-light')}>
                                     <h4 onClick={() => toggleFAQ(index)}>{item.question}</h4>
 
                                     <div className={cx('faq-answer', openIndex === index && 'open')}>

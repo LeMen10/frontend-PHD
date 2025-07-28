@@ -278,12 +278,6 @@ select {
     word-wrap: normal;
 }
 
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-    -webkit-appearance: button;
-}
 
 button:not(:disabled),
 [type='button']:not(:disabled),
@@ -348,7 +342,6 @@ progress {
 
 [type='search'] {
     outline-offset: -2px;
-    -webkit-appearance: none;
 }
 
 [type='search']::-webkit-search-decoration {
@@ -10156,18 +10149,6 @@ a.text-dark:focus {
     }
 }
 
-// .jumbotron {
-    // background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/header.jpg),
-//         no-repeat center center;
-//     background-size: cover;
-// }
-
-// .jumbotron.page-header {
-    // background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/page-header.jpg),
-//         no-repeat center center;
-//     background-size: cover;
-// }
-
 .overlay-top::before,
 .overlay-bottom::after {
     position: absolute;
@@ -10180,18 +10161,15 @@ a.text-dark:focus {
 
 .overlay-top::before {
     top: 0;
-    // background: url(../img/overlay-top.png) top center no-repeat;
     background-size: contain;
 }
 
 .overlay-bottom::after {
     bottom: 0;
-    // background: url(../img/overlay-bottom.png) bottom center no-repeat;
     background-size: contain;
 }
 
 .bg-image {
-    // background: linear-gradient(rgba(40, 120, 235, 0.05), rgba(40, 120, 235, 0.05)), url(../img/bg-image.jpg);
     background-attachment: fixed;
 }
 
