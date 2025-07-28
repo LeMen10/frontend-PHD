@@ -1,28 +1,154 @@
 import className from 'classnames/bind';
 import styles from './Home.module.scss';
 import images from '~/assets/images/images';
-import { Link } from 'react-router-dom';
 import Banner from '~/components/Banner/Banner';
+import { useState } from 'react';
+import { ChalkboardUserIcon, DollarIcon, PersonIcon } from '~/components/Icons';
 
 const cx = className.bind(styles);
 
 const Home = () => {
+    const services = [
+        {
+            title: 'Tư vấn xây kênh Tiktok/Youtube',
+            price: 'Từ 500.000 đến 1.000.000',
+            description: [
+                '✅ Phân tích thị trường và định hướng nội dung.',
+                '✅ Hướng dẫn xây dựng profile cá nhân.',
+                '✅ Tối ưu hóa video.',
+                '✅ Chiến lược tăng follow, tương tác và giữ chân người xem.',
+                '✅ Xây dựng lịch đăng video và quản lý nội dung nhất quán.',
+                '✅ Tư vấn phát triển thương hiệu cá nhân và kiếm tiền trên nền tảng.',
+            ],
+        },
+        {
+            title: 'Tư vấn live stream',
+            price: 'Từ 500.000 đến 1.000.000',
+            description: [
+                '✅ Hướng dẫn chuẩn bị nội dung và kịch bản livestream.',
+                '✅ Tư vấn thiết bị, phần mềm, ánh sáng, âm thanh phù hợp.',
+                '✅ Cách tương tác với người xem để giữ chân và tăng tương tác.',
+                '✅ Chiến lược xây dựng thương hiệu cá nhân khi livestream.',
+                '✅ Hỗ trợ lên kế hoạch livestream định kỳ và quản lý lịch trình.',
+            ],
+        },
+        {
+            // icon: <UsersIcon size={48} className="service-icon" />,
+            title: 'Dịch vụ viết kịch bản Youtube/Tiktok',
+            price: 'Từ 100.000 đến 1.000.000',
+            description: [
+                '✅ Viết kịch bản theo chủ đề: tin tức, giải trí, phim, anime/manga, vlog,...',
+                '✅ Tối ưu nội dung theo định dạng nền tảng (ngắn gọn, cuốn hút).',
+                '✅ Hỗ trợ sáng tạo nội dung cho từng video hoặc theo series.',
+                '✅ Tư vấn cách thể hiện nội dung để tăng tương tác và giữ chân người xem.',
+                '✅ Cam kết nội dung không vi phạm bản quyền hoặc chính sách nền tảng.',
+            ],
+        },
+        {
+            // icon: <UsersIcon size={48} className="service-icon" />,
+            title: 'Dựng video Youtube/Tiktok',
+            price: 'Từ 100.000 đến 1.000.000',
+            description: [
+                '✅ Dựng video theo kịch bản có sẵn hoặc đề xuất ý tưởng nội dung.',
+                '✅ Cắt ghép, thêm hiệu ứng, âm thanh, sub (phụ đề) chuyên nghiệp.',
+                '✅ Tối ưu định dạng video theo chuẩn TikTok hoặc YouTube.',
+                '✅ Chèn logo, intro, outro theo thương hiệu cá nhân.',
+                '✅ Hỗ trợ xuất file chất lượng cao, sẵn sàng đăng tải.',
+            ],
+        },
+    ];
+
+    const faqData = [
+        {
+            question: '1. PHD Studio chuyên cung cấp những dịch vụ gì?',
+            answer: (
+                <>
+                    PHD Studio cung cấp dịch vụ truyền thông đa dạng và chuyên sâu, bao gồm:
+                    <br />– Tư vấn chiến lược thương hiệu và định hướng nội dung
+                    <br />– Sản xuất video, TVC, viral clip, motion graphics
+                    <br />– Quản lý và phát triển kênh Tiktok, Youtube, Facebook
+                    <br />– Thiết kế bộ nhận diện thương hiệu (logo, slogan, hồ sơ năng lực)
+                    <br />– Tổ chức sự kiện truyền thông, booking KOLs/KOCs theo ngành nghề
+                </>
+            ),
+        },
+        {
+            question: '2. Tôi chưa có kinh nghiệm truyền thông, công ty có hỗ trợ từ đầu không?',
+            answer: (
+                <>
+                    Chắc chắn có. PHD Studio có nhiều kinh nghiệm làm việc với cá nhân, startup và doanh nghiệp nhỏ chưa
+                    từng triển khai truyền thông. Chúng tôi sẽ tư vấn chiến lược phù hợp, hỗ trợ xây dựng hình ảnh
+                    thương hiệu, thiết kế nhận diện và hướng dẫn bạn từng bước để phát triển hiệu quả trên các nền tảng
+                    số như Tiktok, Youtube, v.v.
+                </>
+            ),
+        },
+        {
+            question: '3. Chi phí dịch vụ tại PHD Studio được tính như thế nào?',
+            answer: (
+                <>
+                    Chi phí dịch vụ phụ thuộc vào quy mô, loại hình và thời lượng dự án. Chúng tôi luôn trao đổi rõ ràng
+                    với khách hàng, gửi báo giá chi tiết từng hạng mục, đảm bảo minh bạch – không phát sinh chi phí bất
+                    ngờ. Với từng ngân sách cụ thể, PHD Studio đều có phương án tối ưu để mang lại hiệu quả cao nhất.
+                </>
+            ),
+        },
+        {
+            question: '4. PHD Studio có nhận sản xuất video hoặc TVC riêng lẻ không?',
+            answer: (
+                <>
+                    Có. Ngoài các gói dịch vụ trọn gói, PHD Studio nhận sản xuất video riêng lẻ theo yêu cầu như: Video
+                    giới thiệu doanh nghiệp, TVC quảng cáo, Clip viral cho mạng xã hội, Video phỏng vấn, review sản
+                    phẩm. Chúng tôi có đội ngũ đạo diễn, quay dựng và biên kịch chuyên nghiệp để đảm bảo chất lượng đầu
+                    ra theo đúng ý tưởng và mục tiêu truyền thông của bạn.
+                </>
+            ),
+        },
+        {
+            question: '5. Thời gian triển khai một dự án là bao lâu?',
+            answer: (
+                <>
+                    Thời gian thực hiện phụ thuộc vào mức độ phức tạp và số lượng đầu việc. Các dự án đơn giản như video
+                    ngắn thường hoàn thành trong 5–7 ngày, còn các chiến dịch lớn hoặc sản phẩm cần lên ý tưởng kỹ lưỡng
+                    sẽ kéo dài từ 2–4 tuần. PHD Studio sẽ cung cấp lịch trình chi tiết ngay từ đầu để bạn dễ theo dõi và
+                    phối hợp.
+                </>
+            ),
+        },
+        {
+            question: '6. Tôi muốn phát triển kênh Tiktok/Youtube cá nhân, PHD Studio có gói dịch vụ phù hợp không?',
+            answer: (
+                <>
+                    Hoàn toàn phù hợp. Chúng tôi có các gói dịch vụ riêng cho cá nhân muốn xây dựng kênh chuyên nghiệp
+                    từ đầu, bao gồm:
+                    <br />– Tư vấn xây dựng nội dung và cá tính thương hiệu cá nhân
+                    <br />– Lên lịch đăng bài, kịch bản video
+                    <br />– Hướng dẫn quay dựng cơ bản hoặc hỗ trợ full-service theo ngân sách
+                </>
+            ),
+        },
+    ];
+
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const toggleFAQ = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
     return (
         <>
             <section id="home" className={cx('hero-section')}>
-                <div className={cx('position-relative', 'w-100')} style={{ height: '100vh', overflow: 'hidden' }}>
+                <div
+                    className={cx('position-relative', 'w-100', 'mb-5')}
+                    style={{ height: '100vh', overflow: 'hidden' }}
+                >
                     <Banner />
                     <div
                         className={cx('container', 'h-100', 'd-flex', 'align-items-center', 'position-relative')}
                         style={{ zIndex: 2 }}
                     >
                         <div
-                            className={cx('text-white')}
-                            style={{
-                                maxWidth: '720px',
-                                textAlign: 'left',
-                                paddingTop: '70px',
-                            }}
+                            className={cx('text-white', 'banner-content')}
                         >
                             <h1 className={cx('display-4', 'mb-4')} style={{ color: '#ffffff' }}>
                                 Chào mừng đến với PHD Studio
@@ -49,6 +175,60 @@ const Home = () => {
                     </div>
                 </div>
 
+                <div className={cx('container')}>
+                    <div className="text-center mb-5">
+                        <h2 className={cx('title', 'mb-3')}>Dịch vụ của chúng tôi</h2>
+                        <p className={cx('subtitle')}>
+                            Chúng tôi cung cấp các dịch vụ đào tạo toàn diện để giúp bạn trở thành một streamer thành
+                            công
+                        </p>
+                    </div>
+
+                    <div className="row">
+                        {services.map((service, index) => (
+                            <div key={index} className="col-md-6 col-lg-6 mb-4">
+                                <div className={cx('h-100', 'service-card')}>
+                                    <div className={cx('card-body', 'service-content')}>
+                                        {service.icon && (
+                                            <div className={cx('service-icon', 'mb-2')}>{service.icon}</div>
+                                        )}
+                                        <h5 className={cx('card-title', 'service-title')}>{service.title}</h5>
+                                        <p className={cx('service-price', 'text-primary', 'fw-semibold')}>
+                                            {service.price}
+                                        </p>
+                                        <div className={cx('card-text', 'service-description')}>
+                                            {Array.isArray(service.description) ? (
+                                                <ul className="ps-3 mb-0">
+                                                    {service.description.map((line, idx) => (
+                                                        <p key={idx} className="mb-1">
+                                                            {line}
+                                                        </p>
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                <p>{service.description}</p>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="row justify-content-center mt-5">
+                        <div className="col-md-8 col-lg-12">
+                            <div className={cx('cta-card', 'bg-dark', 'text-white', 'p-4', 'rounded', 'text-center')}>
+                                <h3 className={cx('cta-title', 'mb-3')}>ĐẶC BIỆT</h3>
+                                <p className={cx('cta-text', 'mb-3')}>
+                                    Tuyển dụng, đào tạo Streamer chuyên nghiệp, hỗ trợ xây dựng thương hiệu cá nhân và
+                                    phát triển kênh stream của bạn.
+                                </p>
+                                <button className={cx('cta-button', 'btn', 'btn-light', 'fw-bold')}>Ứng tuyển ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className={cx('container-fluid', 'bg-image')}>
                     <div className={cx('container')}>
                         <div className={cx('row')}>
@@ -64,7 +244,7 @@ const Home = () => {
 
                                 <div className={cx('d-flex', 'mb-3')}>
                                     <div className={cx('btn-icon', 'bg-primary', 'mr-4')}>
-                                        <i className={cx('fa', 'fa-2x', 'fa-graduation-cap', 'text-white')}></i>
+                                        <PersonIcon />
                                     </div>
                                     <div className={cx('mt-n1')}>
                                         <h4>Chuyên gia đồng hành 1:1</h4>
@@ -77,7 +257,7 @@ const Home = () => {
 
                                 <div className={cx('d-flex', 'mb-3')}>
                                     <div className={cx('btn-icon', 'bg-secondary', 'mr-4')}>
-                                        <i className={cx('fa', 'fa-2x', 'fa-certificate', 'text-white')}></i>
+                                        <DollarIcon />
                                     </div>
                                     <div className={cx('mt-n1')}>
                                         <h4>Cam kết thu nhập từ quảng cáo</h4>
@@ -90,7 +270,7 @@ const Home = () => {
 
                                 <div className={cx('d-flex')}>
                                     <div className={cx('btn-icon', 'bg-warning', 'mr-4')}>
-                                        <i className={cx('fa', 'fa-2x', 'fa-book-reader', 'text-white')}></i>
+                                        <ChalkboardUserIcon />
                                     </div>
                                     <div className={cx('mt-n1')}>
                                         <h4>Cấp kênh TikTok & quyền livestream</h4>
@@ -122,7 +302,7 @@ const Home = () => {
                 >
                     <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                         <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>✨ Chúng tôi mang đến những gì</p>
-                        <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '3rem' }}>
+                        <h2 style={{ fontWeight: 'bold', marginBottom: '3rem' }}>
                             Giá Trị Của PHD Studio
                             <br />
                             Đối Với Khách Hàng
@@ -175,83 +355,26 @@ const Home = () => {
                         </div>
                     </div>
 
+
                     <div className={cx('row')}>
-                        <div className={cx('col-md-4', 'mb-4')}>
-                            <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
-                                <h4>1. PHD Studio chuyên cung cấp những dịch vụ gì?</h4>
-                                <p>
-                                    PHD Studio cung cấp dịch vụ truyền thông đa dạng và chuyên sâu, bao gồm:
-                                    <br />– Tư vấn chiến lược thương hiệu và định hướng nội dung
-                                    <br />– Sản xuất video, TVC, viral clip, motion graphics
-                                    <br />– Quản lý và phát triển kênh Tiktok, Youtube, Facebook
-                                    <br />– Thiết kế bộ nhận diện thương hiệu (logo, slogan, hồ sơ năng lực)
-                                    <br />– Tổ chức sự kiện truyền thông, booking KOLs/KOCs theo ngành nghề
-                                </p>
-                            </div>
-                        </div>
+                        {faqData.map((item, index) => (
+                            <div key={index} className={cx('col-md-4', 'mb-4')}>
+                                <div
+                                    className={cx(
+                                        'faq-item',
+                                        openIndex === index && 'active',
+                                        'p-4',
+                                        'bg-light',
+                                    )}
+                                >
+                                    <h4 onClick={() => toggleFAQ(index)}>{item.question}</h4>
 
-                        <div className={cx('col-md-4', 'mb-4')}>
-                            <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
-                                <h4>2. Tôi chưa có kinh nghiệm truyền thông, công ty có hỗ trợ từ đầu không?</h4>
-                                <p>
-                                    Chắc chắn có. PHD Studio có nhiều kinh nghiệm làm việc với cá nhân, startup và doanh
-                                    nghiệp nhỏ chưa từng triển khai truyền thông. Chúng tôi sẽ tư vấn chiến lược phù
-                                    hợp, hỗ trợ xây dựng hình ảnh thương hiệu, thiết kế nhận diện và hướng dẫn bạn từng
-                                    bước để phát triển hiệu quả trên các nền tảng số như Tiktok, Youtube, v.v.
-                                </p>
+                                    <div className={cx('faq-answer', openIndex === index && 'open')}>
+                                        <p style={{ whiteSpace: 'pre-line' }}>{item.answer}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div className={cx('col-md-4', 'mb-4')}>
-                            <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
-                                <h4>3. Chi phí dịch vụ tại PHD Studio được tính như thế nào?</h4>
-                                <p>
-                                    Chi phí dịch vụ phụ thuộc vào quy mô, loại hình và thời lượng dự án. Chúng tôi luôn
-                                    trao đổi rõ ràng với khách hàng, gửi báo giá chi tiết từng hạng mục, đảm bảo minh
-                                    bạch – không phát sinh chi phí bất ngờ. Với từng ngân sách cụ thể, PHD Studio đều có
-                                    phương án tối ưu để mang lại hiệu quả cao nhất.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={cx('col-md-4', 'mb-4')}>
-                            <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
-                                <h4>4. PHD Studio có nhận sản xuất video hoặc TVC riêng lẻ không?</h4>
-                                <p>
-                                    Có. Ngoài các gói dịch vụ trọn gói, PHD Studio nhận sản xuất video riêng lẻ theo yêu
-                                    cầu như: Video giới thiệu doanh nghiệp, TVC quảng cáo, Clip viral cho mạng xã hội,
-                                    Video phỏng vấn, review sản phẩm. Chúng tôi có đội ngũ đạo diễn, quay dựng và biên
-                                    kịch chuyên nghiệp để đảm bảo chất lượng đầu ra theo đúng ý tưởng và mục tiêu truyền
-                                    thông của bạn.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={cx('col-md-4', 'mb-4')}>
-                            <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
-                                <h4>5. Thời gian triển khai một dự án là bao lâu?</h4>
-                                <p>
-                                    Thời gian thực hiện phụ thuộc vào mức độ phức tạp và số lượng đầu việc. Các dự án
-                                    đơn giản như video ngắn thường hoàn thành trong 5–7 ngày, còn các chiến dịch lớn
-                                    hoặc sản phẩm cần lên ý tưởng kỹ lưỡng sẽ kéo dài từ 2–4 tuần. PHD Studio sẽ cung
-                                    cấp lịch trình chi tiết ngay từ đầu để bạn dễ theo dõi và phối hợp.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={cx('col-md-4', 'mb-4')}>
-                            <div className={cx('faq-item', 'p-4', 'bg-light', 'h-100')}>
-                                <h4>
-                                    6. Tôi muốn phát triển kênh Tiktok/Youtube cá nhân, PHD Studio có gói dịch vụ phù
-                                    hợp không?
-                                </h4>
-                                <p>
-                                    Hoàn toàn phù hợp. Chúng tôi có các gói dịch vụ riêng cho cá nhân muốn xây dựng kênh
-                                    chuyên nghiệp từ đầu, bao gồm: Tư vấn xây dựng nội dung và cá tính thương hiệu cá
-                                    nhân, Lên lịch đăng bài, kịch bản video
-                                </p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </section>
             </section>
