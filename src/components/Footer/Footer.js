@@ -35,9 +35,15 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <button className={cx('subscribe-button')} aria-label="Subscribe for updates">
-                            SUBSCRIBE
-                        </button>
+                        {/* <button className={cx('subscribe-button')} aria-label="Subscribe for updates">
+                            Liên hệ ngay
+                        </button> */}
+                        <p
+                            onClick={() => window.open('https://forms.gle/ZC8mAbxMLnZ3qRci8', '_blank')}
+                            className={cx('subscribe-button')}
+                        >
+                            Liên hệ ngay
+                        </p>
                     </section>
 
                     <section className={cx('footer-section', 'follow')} aria-label="Follow on social media">
