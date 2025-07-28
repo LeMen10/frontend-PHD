@@ -11,11 +11,13 @@ const MobileMenu = ({ onClose }) => {
         <div className={cx('mobile-menu')}>
             <div className={cx('mobile-overlay')} onClick={onClose}></div>
             <div className={cx('mobile-panel')}>
-                <button className={cx('close-btn')} onClick={onClose}>
-                    ✕
-                </button>
+                <div className={cx('close-wrapper')}>
+                    <button className={cx('close-btn')} onClick={onClose}>
+                        ✕
+                    </button>
+                </div>
                 <div className={cx('menu-content')}>
-                    <input className={cx('search')} placeholder="Tìm kiếm..." />
+                    {/* <input className={cx('search')} placeholder="Tìm kiếm..." /> */}
                     <nav>
                         <Link to="/" onClick={onClose} className={cx('nav-item', { active: pathname === '/' })}>
                             Trang chủ

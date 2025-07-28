@@ -18,7 +18,6 @@ const Contact = () => {
                 form.current.reset();
             },
             (error) => {
-                alert('❌ Gửi thất bại. Vui lòng thử lại sau!');
                 console.error(error.text);
             },
         );
@@ -41,6 +40,11 @@ const Contact = () => {
                                 Dù bạn là cá nhân, doanh nghiệp hay nhà sáng tạo nội dung, chúng tôi luôn sẵn sàng lắng
                                 nghe, tư vấn và đồng hành cùng bạn trong mọi bước xây dựng và phát triển kênh TikTok,
                                 YouTube một cách hiệu quả và bền vững.
+                            </p>
+                            <p style={{ color: '#ffffff', fontWeight: 500 }}>
+                                Hãy để chúng tôi trở thành cánh tay phải đắc lực trong hành trình xây dựng thương hiệu
+                                cá nhân, chinh phục khán giả số và tạo dấu ấn bền vững trên các nền tảng TikTok, YouTube
+                                và hơn thế nữa.
                             </p>
                             <p
                                 onClick={() => window.open('https://forms.gle/ZC8mAbxMLnZ3qRci8', '_blank')}
